@@ -5,23 +5,35 @@ This is a basic protfolio, including
 pages. -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
     <title>About Me</title>
-
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/">
-
+    <!-- Original CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <header id="masthead">
+    <!-- <header id="masthead">
         <div class="container">
             <a href="index.html" id="logo" class="logo-box">Colin Reesor</a>
             <nav>
@@ -30,24 +42,62 @@ pages. -->
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
+    </header> -->
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light container">
+            <a class="navbar-brand logo-box col-md-4" id="logo" href="index.html">Colin Reesor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <div id="main-container" class="container">
 
-        <section class="main-section">
+
+
+    <div id="main-container" class="main-section container-fluid">
+        <h1>About Me</h1>
+        <div class="col-md-8">
+            <img src="assets/images/Auth-pic.jpg" class="auth-image" alt="Author's picture">
+            <p>Greetings, humans. I know that this old high school picture of me probably looks like I'm saying, "hey,
+                dude", but I'm really not. Back then, having bleached hair and sideburns was a thing - not so much now.
+            </p>
+            <p>Some of my interests include artwork, soccer, biking, skateboarding, snowboarding, running around in the
+                mountains, and melting faces with my guitar. I've been interested in coding for a long time, and have
+                written small applications independently here and there over the years. I was introduced to Web
+                development a couple of years ago and decided this is the way to go. I'm really excited to finally get
+                the formal training I've wanted.</p>
+        </div>
+
+
+
+        <!-- <section class="main-section">
             <h1>About Me</h1>
             <img src="assets/images/Auth-pic.jpg" class="auth-image" alt="Author's picture">
-            <p>Greetings, humans.  I know that this old high school picture of me probably looks like I'm saying, "hey, dude", but I'm really not.  Back then, having bleached hair and sideburns was a thing - not so much now.</p>
-            <p>Some of my interests include artwork, soccer, biking, skateboarding, snowboarding, running around in the mountains, and melting faces with my guitar.  I've been interested in coding for a long time, and have written small applications independently here and there over the years.  I was introduced to Web development a couple of years ago and decided this is the way to go.  I'm really excited to finally get the formal training I've wanted.</p>
-        </section>
-
-        <section class="sidebar">
-            <div id="connect">
-                <h2>Woncha be my neighbor?</h2>
-                <a href="https://github.com/colinSeven8" target="_blank"><img src="assets/images/github.png" class="social" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/colin-reesor-685408168/" target="_blank"><img src="assets/images/linkedin.png" class="social" alt="LinkedIn"></a>
-            </div>
-        </section>
+            <p>Greetings, humans. I know that this old high school picture of me probably looks like I'm saying, "hey,
+                dude", but I'm really not. Back then, having bleached hair and sideburns was a thing - not so much now.
+            </p>
+            <p>Some of my interests include artwork, soccer, biking, skateboarding, snowboarding, running around in the
+                mountains, and melting faces with my guitar. I've been interested in coding for a long time, and have
+                written small applications independently here and there over the years. I was introduced to Web
+                development a couple of years ago and decided this is the way to go. I'm really excited to finally get
+                the formal training I've wanted.</p>
+        </section> -->
 
     </div>
 
