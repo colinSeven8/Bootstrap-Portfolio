@@ -1,79 +1,86 @@
 <!-- Coding bootcamp assignment 1
 Colin Reesor ID 00132816
-This is my Bootstrap-Portfolio, including
+This is a basic protfolio, including
 "About", "Contact" and "Portfolio" 
-pages, showcasing different viewport settings. -->
+pages. -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <title>About Me</title>
-    <meta charset="UTF-8">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Reset CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Bootstrap JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Original CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Original CSS -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+
+  <title>Bootstrap-Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light container">
-            <a class="navbar-brand logo-box col-md-4" id="logo" href="index.html">Colin Reesor</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                        <li class="nav-item">
-                        </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
-    <div id="main-container" class="main-section container-fluid">
-        <h1>About Me</h1>
-        <div>
-            <img src="assets/images/Auth-pic.jpg" class="auth-image" alt="Author's picture">
-            <p>Greetings, humans. I know that this old high school picture of me probably looks like I'm saying, "hey,
-                dude", but I'm really not. Back then, having bleached hair and sideburns was a thing - not so much now.
-            </p>
-            <p>Some of my interests include artwork, soccer, biking, skateboarding, snowboarding, running around in the
-                mountains, and melting faces with my guitar. I've been interested in coding for a long time, and have
-                written small applications independently here and there over the years. I was introduced to Web
-                development a couple of years ago and decided this is the way to go. I'm really excited to finally get
-                the formal training I've wanted.</p>
-        </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Colin Reesor</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+  <!-- <div id="main-container" class="container">
+
+    <section class="main-section">
+      <h1>About Me</h1>
+      <img src="assets/images/Auth-pic.jpg" class="auth-image" alt="Author's picture">
+      <p>Greetings, humans. I know that this old high school picture of me probably looks like I'm saying, "hey,
+        dude", but I'm really not. Back then, having bleached hair and sideburns was a thing - not so much now.
+      </p>
+      <p>Some of my interests include artwork, soccer, biking, skateboarding, snowboarding, running around in the
+        mountains, and melting faces with my guitar. I've been interested in coding for a long time, and have
+        written small applications independently here and there over the years. I was introduced to Web
+        development a couple of years ago and decided this is the way to go. I'm really excited to finally get
+        the formal training I've wanted.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      &copy; Copyright 2019 Colin Reesor
     </div>
+  </footer> -->
 
-    <footer>
-        <div class="container">
-            &copy; Copyright 2019 Colin Reesor
-        </div>
-    </footer>
-
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
