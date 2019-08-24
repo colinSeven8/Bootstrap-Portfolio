@@ -14,22 +14,18 @@ body {
   color: #777;
 }
 
-.container, 
-.navbar-light, 
-.bg-light {
-  width: 100%;
-  margin: 0 auto;
-  clear: both;
+.container {
+  max-width: 760px;
+  margin: 30px;
+  padding: 0 30px;
+  background-color: #fff;
+  line-height: 1.5em;
 }
 
-h1, h2, h3, p {
-  margin-bottom: 20px;
-}
-
-h1, h2, h3 {
+h1, h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 700;
-  color: #6B7B80;
+  color: #4aaaa5;
 }
 
 h1 {
@@ -39,135 +35,34 @@ h1 {
   padding-bottom: 20px;
 }
 
-h2, h3 {
-  font-size: 22px;
-}
-
 #logo {
-  width: 300px;
-  height: 90px;
-  margin-left: 30px;
+  width: 280px;
+  height: 80px;
+  margin-left: 15px;
   float: left;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
-  line-height: 80px;
+  line-height: 50px;
+  background-color: #777;
   color: #4aaaa5;
   font-weight: 700;
   font-size: 30px;
   text-decoration: none;
 }
 
-.logo-box {
-  background-color:#666;
-  transition: background-color 0.25s ease;
-}
-
-.logo-box:hover {
-  background-color: #A3BBBF;
-}
-
-.navbar {
-  height: 100%;
-  float: left;
-  padding: 0;
-}
-
-.navbar-collapse {
-  margin-left: 340px;
-  width: 100%;
-}
-
-nav {
-  float: right;
-  margin-top: 25px;
-}
-
-li a {
-  color: #A3BBBF;
-  text-decoration: none;
-  margin-left: 15px;
-  display: inline-block;
-  border-left: 1px solid #A3BBBF;
-  padding-left: 15px;
-  line-height: 18px;
-  transition: color 0.15s ease;
-}
-
-li a:first-child {
-  border-left: 0 none;
-}
-
-a:hover {
-  color: rgb(248, 251, 252);
-}
-
-#main-container {
-  padding-top: 30px;
-}
-
-.main-section {
-  background-color: #fff;
-  padding: 30px;
-  margin: 30px 8px;
-  width: 100%;
-  float: left;
-  border: 1px solid #ddd;
-  max-width: 960px;
-}
-
-.auth-image {
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  float: left;
-  margin-right: 25px;
-}
-
-.sidebar {
-  background-color: #fff;
-  padding: 30px;
-  width: 100%;
-  max-width: 270px;
-  float: right;
-  border: 1px solid #ddd;
-  margin-bottom: 20px;
-}
-
-h3, .sidebar, h2 {
-  border-bottom: 2px solid #eee;
-  padding-bottom: 20px;
-  margin-bottom: 15px;
-  line-height: 22px;
-}
-
-.social {
-  width: 93px;
-  height: 93px;
-  margin-top: 8px;
-  margin-right: 5px;
-  transition: width 0.25s ease;
-  transition: height 0.25s ease;
-}
-
-.social:hover {
-  width: 97px;
-  height: 97px;
-}
-
-.social:last-child {
-  margin-right: 0;
-}
-
-footer {
+.footer {
   background-color: #363E40;
   color: #fff;
-  padding: 30px 0;
+  padding: 30px;
   clear: both;
   border-top: 8px solid #4aaaa5;
   color: #ccc;
   font-size: 12px;
   text-align: center;
-  position: sticky;
+}
+
+.btn-primary {
+  background-color: #4aaaa5;
 }
 
 .work {

@@ -7,26 +7,73 @@ pages. -->
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Contact</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+        <!-- Original CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      
+        <title>Colin's Contact page</title>
+      </head>
 
 <body>
-    <header id="masthead">
-        <div class="container">
-                <a href="index.html" id="logo" class="logo-box">Colin Reesor</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a id="logo" class="navbar-brand" href="index.html">Colin Reesor</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </nav>
 
-    <div id="main-container" class="container">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="page-header">
+                    <h1>Contact</h1>
+                  </div>
+                  <div class="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label for="basic-url">Name</label>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Herbie Hancock" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                              <label for="basic-url">Email</label>
+                              <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Username" id="basic-url" aria-describedby="basic-addon3">
+                              </div>
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <label for="basic-url">Your Message</label>
+                                </div>
+                                <textarea class="form-control" placeholder="Say something profound to me..." aria-label="Username" aria-label="With textarea"></textarea>
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- <div id="main-container" class="container">
         <section class="main-section">
             <h1>Contact</h1>
             <form id="contact-form">
@@ -48,21 +95,13 @@ pages. -->
             </form>
         </section>
 
-        <section class="sidebar">
-            <div id="connect">
-                <h2>Woncha be my neighbor?</h2>
-                <a href="https://github.com/colinSeven8" target="_blank"><img src="assets/images/github.png" class="social" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/colin-reesor-685408168/" target="_blank"><img src="assets/images/linkedin.png" class="social" alt="LinkedIn"></a>
-            </div>
-        </section>
-
-    </div>
+    </div> -->
 
     <footer>
-        <div class="container">
-            &copy; Copyright 2019 Colin Reesor
+        <div class="footer navbar navbar-default navbar-fixed-bottom">
+          &copy; Copyright 2019 Colin Reesor
         </div>
-    </footer>
+      </footer>
 </body>
 
 </html>
